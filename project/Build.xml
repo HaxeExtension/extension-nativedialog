@@ -1,0 +1,27 @@
+<xml>
+	
+	<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+	
+	
+	<files id="common">		
+		<compilerflag value="-Iinclude"/>
+		<compilerflag value="-Iios/include" />
+		<file name="common/ExternalInterface.cpp"/>
+		<file name="ios/NativeDialog.mm" />
+	</files>
+	
+	<target id="NDLL" output="${LIBPREFIX}openflNativeDialogExtension${debug_extra}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+
+		<outdir name="../ndll/${BINDIR}"/>
+		<ext value=".ndll" if="windows || mac || linux" />
+		<files id="common"/>
+		
+	</target>
+	
+	<target id="default">
+		
+		<target id="NDLL"/>
+		
+	</target>
+	
+</xml>
