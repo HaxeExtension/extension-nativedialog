@@ -16,7 +16,7 @@ import extension.nativedialog.NativeDialog;
 class SimpleExample {
 
 	function showSomething(){
-		NativeDialog.showMessage("There was an error","You request could not be processed", "OK");
+		NativeDialog.showMessage("There was an error","Your request failed. Please check your internet conenction and try again.", "OK");
 	}
 
 }
