@@ -2,7 +2,7 @@
 
 Native Dialog calls for OpenFL
 
-This is a simple "Native Dialog" API implementation. So far it ...
+This is a simple "Native Dialog" API implementation.
 
 ###Simple use Example
 
