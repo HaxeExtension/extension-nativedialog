@@ -2,7 +2,9 @@
 
 Native Dialog calls for OpenFL
 
-This is a simple "Native Dialog" API implementation.
+This is a simple "Native Dialog" API implementation. So far it implements the "showMessage" function, but the extension will add more features like "showConfirmMessage" and "showMultipleOptions".
+
+Pull requests and comments are appreciated.
 
 ###Simple use Example
 
