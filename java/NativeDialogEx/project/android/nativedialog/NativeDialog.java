@@ -31,8 +31,8 @@ public class NativeDialog {
 
 		dialog.setTitle(title);
 		dialog.setMessage(text);
-		dialog.setPositiveButton(buttonText, onText);
-		dialog.setNegativeButton(buttonText, cancelText);
+		dialog.setPositiveButton(okText, onText);
+		dialog.setNegativeButton(cancelText, cancelText);
 		dialog.show();
 
 		return true;
