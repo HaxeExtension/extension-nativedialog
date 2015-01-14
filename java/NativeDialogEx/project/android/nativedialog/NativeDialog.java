@@ -1,20 +1,41 @@
 package nativedialog;
 
-import android.content.Intent;
+import android.content.DialogInterface;
+import android.app.AlertDialog;
 import org.haxe.lime.GameActivity;
 
 public class NativeDialog {
     
-	public static void showMessage(String text, String subject, String html, String email) {
-		/*
-		Intent sendIntent = new Intent(android.content.Intent.ACTION_SEND);
-		sendIntent.setType("text/plain");
-        if(subject!=null && subject!="")	sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
-        if(text!=null && text!="")	sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, text);
-        if(html!=null && html!="")	sendIntent.putExtra(android.content.Intent.EXTRA_HTML_TEXT, html);
-		if(email!=null && email!="") sendIntent.putExtra(android.content.Intent.EXTRA_EMAIL, email);
-        GameActivity.getInstance().getContext().startActivity(sendIntent);
-        */
+	public static void showMessage( final String title, final String text, final String buttonText) {
+
+		AlertDialog.Builder dialog = new AlertDialog.Builder(GameActivity.getInstance().getContext());
+
+		DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) { }
+		};
+
+		dialog.setTitle(title);
+		dialog.setMessage(text);
+		dialog.setNeutralButton(buttonText, onClickListener);
+		dialog.show();
+
 	}
 
+	public static Boolean confirmMessage(String title, String text, String okText, String cancelText) {
+
+		AlertDialog.Builder dialog = new AlertDialog.Builder(GameActivity.getInstance().getContext());
+
+		DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) { }
+		};
+
+		dialog.setTitle(title);
+		dialog.setMessage(text);
+		dialog.setPositiveButton(buttonText, onText);
+		dialog.setNegativeButton(buttonText, cancelText);
+		dialog.show();
+
+		return true;
+		
+	}
 }

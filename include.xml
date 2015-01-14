@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension>
 	<section if="android">
-		<include path="java/NativeDialog/include.xml" />
+		<include path="java/NativeDialogEx/include.xml" />
 	</section>
 	<section if="ios">
 		<ndll name="openflNativeDialogExtension" />
