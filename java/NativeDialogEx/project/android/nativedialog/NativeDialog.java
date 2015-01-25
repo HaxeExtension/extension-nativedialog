@@ -26,6 +26,7 @@ public class NativeDialog {
 				dialog.setTitle(title);
 				dialog.setMessage(text);
 				dialog.setNeutralButton(buttonText, onClickListener);
+				dialog.setCancelable(false);
 				dialog.show();
 			}
 		});
