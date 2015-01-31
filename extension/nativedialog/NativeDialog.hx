@@ -38,7 +38,7 @@ class NativeDialog {
 		try{
 			#if ( android || ios )
 				__showMessage(title, text, buttonText);
-			#elseif hmtl5
+			#elseif html5
 				js.Browser.window.alert(title+"\n"+text);
 				callbackObject._onShowMessageClose();
 			#end
@@ -52,11 +52,11 @@ class NativeDialog {
 		try{
 			#if ( android || ios )
 				__confirmMessage(title, text, okButtonText, cancelButtonText);
-			#elseif hmtl5
+			#elseif html5
 				if(js.Browser.window.confirm(title+"\n"+text)){
 					callbackObject._onConfirmMessageOk();
 				}else{
-					callbackObject._onConfirmMessageClose();
+					callbackObject._onConfirmMessageCancel();
 				}
 			#end
 		}catch(e:Dynamic){
