@@ -37,12 +37,17 @@ public class NativeDialog {
 			public void run() {
 				AlertDialog.Builder dialog = new AlertDialog.Builder(GameActivity.getInstance().getContext());
 				DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) { }
+					public void onClick(DialogInterface dialog, int which) {
+						if(NativeDialog.callback==null) return;
+						if(which == DialogInterface.BUTTON_POSITIVE) NativeDialog.callback.call ("_onConfirmMessageOk",null);						
+						if(which == DialogInterface.BUTTON_NEGATIVE) NativeDialog.callback.call ("_onConfirmMessageCancel",null);						
+					}
 				};
 				dialog.setTitle(title);
 				dialog.setMessage(text);
 				dialog.setPositiveButton(okText, onClickListener);
 				dialog.setNegativeButton(cancelText, onClickListener);
+				dialog.setCancelable(false);
 				dialog.show();
 			}
 		});		
