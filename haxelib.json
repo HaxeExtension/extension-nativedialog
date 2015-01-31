@@ -5,6 +5,6 @@
         "contributors":["fbricker"],
         "tags": ["dialog","api","ios","html5","android","openfl"],
         "description": "Native dialog support for Android, iOS and HTML5.",
-        "version": "1.0.1",
-        "releasenote": "Added Callbacks."
+        "version": "1.1.1",
+        "releasenote": "Added ConfirmMessage method + Fixed HTML5 support."
 }
