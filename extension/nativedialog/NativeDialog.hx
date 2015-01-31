@@ -15,7 +15,8 @@ class NativeDialog {
 	private static var __init : NativeDialog->Void = JNI.createStaticMethod ("nativedialog/NativeDialog", "init", "(Lorg/haxe/lime/HaxeObject;)V");
 	#elseif ios
 	private static var __showMessage : String->String->String->Void = Lib.load("openflNativeDialogExtension","show_message",3);
-	private static var __init : Dynamic->Void =  Lib.load ("openflNativeDialogExtension", "set_callback", 1);
+	private static var __confirmMessage : String->String->String->String->Void = Lib.load("openflNativeDialogExtension","confirm_message",4);
+	private static var __init : Dynamic->Dynamic->Dynamic->Void =  Lib.load ("openflNativeDialogExtension", "set_callback", 3);
 	#end
 
 	private static function init(){
@@ -24,7 +25,7 @@ class NativeDialog {
 		#if android
 		__init(callbackObject);
 		#elseif ios
-		__init(callbackObject._onShowMessageClose);
+		__init(callbackObject._onShowMessageClose, callbackObject._onConfirmMessageOk, callbackObject._onConfirmMessageCancel);
 		#end
 	}
 

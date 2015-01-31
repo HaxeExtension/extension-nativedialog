@@ -3,7 +3,8 @@
 
 
 namespace openflNativeDialogExtension {
-		void showMessage(const char* text, const char* url, const char* subject);
+	void showMessage(const char* title, const char* text, const char* buttonText);
+	void confirmMessage(const char* title, const char* text, const char* okButtonText, const char* cancelButtonText);
 }
 
 #endif
