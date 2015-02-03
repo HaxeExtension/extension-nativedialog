@@ -1,7 +1,7 @@
 {
         "name": "openfl-nativedialog",
         "url": "https://github.com/fbricker/openfl-nativedialog",
-        "license": "GPL",
+        "license": "MIT",
         "contributors":["fbricker"],
         "tags": ["dialog","api","ios","html5","android","openfl"],
         "description": "Native dialog support for Android, iOS and HTML5.",
