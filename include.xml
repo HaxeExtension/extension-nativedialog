@@ -7,4 +7,7 @@
 		<ndll name="openflNativeDialogExtension" />
 		<ios linker-flags="-v" />
 	</section>
+	<section if="blackberry">
+		<ndll name="openflNativeDialogExtension" />
+	</section>
 </extension>
