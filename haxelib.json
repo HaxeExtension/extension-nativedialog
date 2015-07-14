@@ -1,6 +1,6 @@
 {
         "name": "openfl-nativedialog",
-        "url": "https://github.com/fbricker/openfl-nativedialog",
+        "url": "https://github.com/sempaigames/openfl-nativedialog",
         "license": "MIT",
         "contributors":["fbricker"],
         "tags": ["dialog","api","ios","html5","android","openfl"],
