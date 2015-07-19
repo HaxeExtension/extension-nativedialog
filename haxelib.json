@@ -1,10 +1,10 @@
 {
-        "name": "openfl-nativedialog",
-        "url": "https://github.com/sempaigames/openfl-nativedialog",
+        "name": "extension-nativedialog",
+        "url": "https://github.com/sempaigames/extension-nativedialog",
         "license": "MIT",
         "contributors":["fbricker"],
-        "tags": ["dialog","api","ios","html5","android","openfl"],
-        "description": "Native dialog support for Android, iOS and HTML5.",
-        "version": "1.1.1",
-        "releasenote": "Added ConfirmMessage method + Fixed HTML5 support."
+        "tags": ["dialog","api","ios","html5","android","blackberry","openfl"],
+        "description": "Native dialog support for Android, iOS, Blackberry and HTML5.",
+        "version": "1.2.0",
+        "releasenote": "Add BlackBerry Support."
 }

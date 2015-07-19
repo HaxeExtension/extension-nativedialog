@@ -1,4 +1,4 @@
-#openfl-nativedialog
+#extension-nativedialog
 
 Native Dialog calls for OpenFL
 
@@ -9,7 +9,7 @@ Pull requests and comments are appreciated.
 ###Simple use Example
 
 ```haxe
-// This is a simple example that shows how to une the openfl-nativedialog extension.
+// This is a simple example that shows how to une the extension-nativedialog extension.
 
 import extension.nativedialog.NativeDialog;
 
@@ -51,7 +51,7 @@ class SimpleExample {
 ###How to Install
 
 ```bash
-haxelib install openfl-nativedialog
+haxelib install extension-nativedialog
 ```
 
 ###License

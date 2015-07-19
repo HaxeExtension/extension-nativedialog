@@ -1,5 +1,5 @@
 #!/bin/bash
 dir=`dirname "$0"`
 cd "$dir"
-haxelib remove openfl-nativedialog
-haxelib local openfl-nativedialog.zip
+haxelib remove extension-nativedialog
+haxelib local extension-nativedialog.zip
