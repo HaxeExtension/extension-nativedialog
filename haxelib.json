@@ -5,6 +5,6 @@
         "contributors":["fbricker"],
         "tags": ["dialog","api","ios","html5","android","blackberry","openfl"],
         "description": "Native dialog support for Android, iOS, Blackberry and HTML5.",
-        "version": "1.2.0",
-        "releasenote": "Add BlackBerry Support."
+        "version": "1.2.1",
+        "releasenote": "Fix NDLL / BlackBerry Support."
 }
