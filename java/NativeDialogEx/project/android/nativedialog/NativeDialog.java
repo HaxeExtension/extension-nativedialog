@@ -17,7 +17,7 @@ public class NativeDialog {
 	public static void showMessage( final String title, final String text, final String buttonText) {
 		Extension.mainActivity.runOnUiThread(new Runnable() {
 			public void run() {
-				AlertDialog.Builder dialog = new AlertDialog.Builder(GameActivity.getInstance().getContext());
+				AlertDialog.Builder dialog = new AlertDialog.Builder(Extension.mainContext);
 				DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						if(NativeDialog.callback!=null) NativeDialog.callback.call ("_onShowMessageClose",null);
@@ -35,7 +35,7 @@ public class NativeDialog {
 	public static void confirmMessage( final String title, final String text, final String okText, final String cancelText) {
 		Extension.mainActivity.runOnUiThread(new Runnable() {
 			public void run() {
-				AlertDialog.Builder dialog = new AlertDialog.Builder(GameActivity.getInstance().getContext());
+				AlertDialog.Builder dialog = new AlertDialog.Builder(Extension.mainContext);
 				DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						if(NativeDialog.callback==null) return;
