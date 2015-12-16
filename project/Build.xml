@@ -1,7 +1,7 @@
 <xml>
 	
 	<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
-	<include name="${HXCPP}/toolchain/blackberry-toolchain.xml"/>	
+	<include name="${HXCPP}/toolchain/blackberry-toolchain.xml" if="blackberry" />
 	
 	<files id="common">		
 		<compilerflag value="-Iinclude" />
@@ -10,7 +10,6 @@
 
 	<files id="iphone">
 		<compilerflag value="-Iinclude" />
-		<compilerflag value="-Iios/include" />
 		<file name="ios/NativeDialog.mm" />
 	</files>
 
