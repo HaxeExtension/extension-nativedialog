@@ -1,7 +1,11 @@
 package extension.nativedialog;
 
 #if android
-import openfl.utils.JNI;
+	#if (openfl < "4.0.0")
+	import openfl.utils.JNI;
+	#else
+	import lime.system.JNI;
+	#end
 #elseif (ios || blackberry)
 import cpp.Lib;
 #end
