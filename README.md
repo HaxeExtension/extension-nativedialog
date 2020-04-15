@@ -1,4 +1,4 @@
-#extension-nativedialog
+# extension-nativedialog
 
 Native Dialog calls for OpenFL
 
@@ -6,7 +6,7 @@ This is a simple "Native Dialog" API implementation. So far it implements the "s
 
 Pull requests and comments are appreciated.
 
-###Simple use Example
+### Simple use Example
 
 ```haxe
 // This is a simple example that shows how to une the extension-nativedialog extension.
@@ -48,13 +48,13 @@ class SimpleExample {
 
 ```
 
-###How to Install
+### How to Install
 
 ```bash
 haxelib install extension-nativedialog
 ```
 
-###License
+### License
 
 The MIT License (MIT) - [LICENSE.md](LICENSE.md)
 
